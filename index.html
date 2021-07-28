@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projekt 2 | fullPage js </title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="content">
+            <div class="section section_one">
+                <h1 class="title">Flowerly</h1>
+                <div class="container_one-img">
+                    <img class="one_img" src="assets/img/flower.png">
+                </div>
+                <div class="container_one">
+                    <h2 class="one_title">welcome</h2>
+                    <p class="one_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum ex neque, in convallis lacus maximus nec. Donec sed vulputate ligula.</p>
+                    <div class="animation-area">
+                        <ul class="box-area">
+                            <li><img src="assets/img/rose-icon.png"></li>
+                            <li><img src="assets/img/rose-icon.png"></li>
+                            <li><img src="assets/img/rose-icon.png"></li>
+                            <li><img src="assets/img/rose-icon.png"></li>
+                            <li><img src="assets/img/rose-icon.png"></li>
+                            <li><img src="assets/img/rose-icon.png"></li>
+                            <li><img src="assets/img/rose-icon.png"></li>
+                            <li><img src="assets/img/rose-icon.png"></li>
+                            <li><img src="assets/img/rose-icon.png"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div class="arrow arrow-first"></div>
+                    <div class="arrow arrow-second"></div>
+                </div>
+            </div>
+            <div class="section section_two">
+                <h1 class="title">Flowerly</h1>
+            </div>
+            <div class="section section_three">Some section 3</div>
+            <div class="section section_four">Some section 4</div>
+        </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init( );
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            new fullpage('#content' , {
+                autoScrolling: true,
+                navigation: true,
+                navigationTooltips: ['Home', 'About', 'Work', 'Contact']
+            })
+        </script>
+    </body>
+</html>
