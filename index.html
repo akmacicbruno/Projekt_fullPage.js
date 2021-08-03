@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <div id="content">
@@ -19,8 +20,8 @@
                     <img class="one_img" src="assets/img/flower.png">
                 </div>
                 <div class="container_one">
-                    <h2 class="one_title">welcome</h2>
-                    <p class="one_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum ex neque, in convallis lacus maximus nec. Donec sed vulputate ligula.</p>
+                    <h2 class="one_title" data-aos="slide-left">welcome</h2>
+                    <p class="one_desc" id="scroll-area" data-aos="slide-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum ex neque, in convallis lacus maximus nec. Donec sed vulputate ligula.</p>
                     <div class="animation-area">
                         <ul class="box-area">
                             <li><img src="assets/img/rose-icon.png"></li>
@@ -32,6 +33,11 @@
                             <li><img src="assets/img/rose-icon.png"></li>
                             <li><img src="assets/img/rose-icon.png"></li>
                             <li><img src="assets/img/rose-icon.png"></li>
+                            <li><img src="assets/img/flower-icons.png"></li>
+                            <li><img src="assets/img/flower-icons.png"></li>
+                            <li><img src="assets/img/flower-icons.png"></li>
+                            <li><img src="assets/img/flower-icons.png"></li>
+                            <li><img src="assets/img/flower-icons.png"></li>
                         </ul>
                     </div>
                 </div>
@@ -42,9 +48,75 @@
             </div>
             <div class="section section_two">
                 <h1 class="title">Flowerly</h1>
+                
             </div>
-            <div class="section section_three">Some section 3</div>
-            <div class="section section_four">Some section 4</div>
+            <div class="section section_three">
+                <h1 class="title">Flowerly</h1>
+                <div class="container_three">
+                    <h2 class="three_title">about us</h2>
+                    <p class="three_desc" id="scroll-area">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum ex neque, in convallis lacus maximus nec. Donec sed vulputate ligula. Curabitur maximus felis a ex dignissim, vel pellentesque quam vehicula. Vestibulum ut sem nec ex posuere hendrerit.</p>
+                    <div class="three_socials">
+                        <ul>
+                            <span>
+                                <li>
+                                    <a href="http://www.facebook.com" target="blank">
+                                        <img class="socials_back" src="assets/img/rose.png">
+                                        <img class="socials_icon" src="assets/img/facebook.png">
+                                    </a>
+                                </li>
+                            </span>
+                            <span>
+                                <li>
+                                    <a href="http://www.instagram.com" target="blank">
+                                        <img class="socials_back" src="assets/img/rose.png">
+                                        <img class="socials_icon" src="assets/img/instagram.png">
+                                    </a>
+                                </li>
+                            </span>
+                            <span>
+                                <li>
+                                    <a href="http://www.youtube.com" target="blank">
+                                        <img class="socials_back" src="assets/img/rose.png">
+                                        <img class="socials_icon" src="assets/img/youtube.png">
+                                    </a>
+                                </li>
+                            </span>
+                            <span>
+                                <li>
+                                    <a href="http://www.whatsapp.com" target="blank">
+                                        <img class="socials_back" src="assets/img/rose.png">
+                                        <img class="socials_icon" src="assets/img/whatsapp.png">
+                                    </a>
+                                </li>
+                            </span>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_four">
+                <h1 class="title">Flowerly</h1>
+                <div class="container_four">
+                    <h2 class="four_title">contact</h2>
+                    <div class="four_form">
+                        <input placeholder="Full name" type="text">
+                        <input placeholder="Email address" type="text">
+                        <input placeholder="Subject" type="text">
+                        <textarea placeholder="Enter your message..."></textarea>
+                        <input class="form_btn" type="button" value="Submit">
+                    </div>        
+                </div>
+                <div class="container_four-img">
+                    <img src="assets/img/florist.png">
+                    <div class="address">
+                        <p>Address</p>
+                        <p>715 Patterson Fork Road, Chicako, IL 60606</p>
+                    </div>
+                    <div class="phone">
+                        <p>Phone</p>
+                        <p>312-655-7333</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -56,8 +128,11 @@
             new fullpage('#content' , {
                 autoScrolling: true,
                 navigation: true,
-                navigationTooltips: ['Home', 'About', 'Work', 'Contact']
+                navigationTooltips: ['Home', 'Work', 'About', 'Contact'],
+                normalScrollElements: '#scroll-area'
             })
         </script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     </body>
 </html>
