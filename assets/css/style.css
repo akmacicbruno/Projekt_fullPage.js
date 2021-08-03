@@ -263,7 +263,96 @@ body {
     background-color: #DEE2FF;
     cursor: url('../img/cherry-blossom.png'), auto;
 }
-
+.container_two {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    height: 70vh;
+    width: 80%;
+    background-color: #CFD4DD;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 15px #FA9EE8;
+    justify-content: center;
+}
+.two_title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    margin: 20px 0px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+}
+.two_title::selection {
+    background-color: transparent;
+    color: rosybrown;
+}
+.two_offers {
+    display: inline-flex;
+    height: 70%;
+    width: 90%;
+    overflow-x: scroll;
+}
+.two_offers::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+.two_offers::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+.two_offers::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255, .7);
+    border-radius: 10px;
+}
+.offer {
+    border: black 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50vw;
+    min-width: 280px;
+    margin-right: 5vw;
+}
+.offer img {
+    height: 50%;
+}
+.offer_desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+.offer_desc-title {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0px;
+}
+.offer_desc-title::selection {
+    background-color: transparent;
+    color: white;
+}
+.offer_desc-desc {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    text-align: center;
+    padding: 0px 7px;
+}
+.offer_desc-desc::selection {
+    background-color: transparent;
+    color: white;
+}
 .section_three {
     background-color: #FEEAFA;
 }
@@ -500,6 +589,10 @@ body {
         height: 50vh !important;
         width: 95vw !important;
     }
+    .container_two {
+        width: 95vw !important;
+        box-shadow: none !important;
+    }
     .container_three {
         display: flex;
         position: absolute;
@@ -507,9 +600,6 @@ body {
         box-shadow: none !important;
     }
     .three_desc {
-        align-items: unset !important;
-    }
-    .two_desc {
         align-items: unset !important;
     }
     .section_four {
